@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Contactos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Fecha Nacimiento</ion-label>
+    <ion-datetime id="dynamicDisabled" displayFormat="MM/DD/YYYY" disabled value="1997-10-11" ></ion-datetime>
+  </ion-item>
+
+  <div class="contEdad">
+    <h1>Calcular la Edad ⏳</h1>
+    <ion-button shape="round" (click)="ageCalculator()">Calcular</ion-button>
+    <p *ngIf="age">Tu edad es {{ showAge }} años</p>
+  </div>
+
+  <ion-card>
+    <ion-item class="activated">
+      <ion-icon name="call" slot="start"></ion-icon>
+      <ion-label>0963185962</ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-icon name="logo-google" slot="start"></ion-icon>
+      <ion-label>kevincuray41@gmail.com</ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-icon name="at" slot="start"></ion-icon>
+      <ion-label>kevin.curay@epn.edu.ec</ion-label>
+    </ion-item>
+
+    <ion-item href="https://github.com/kaxer1" class="activated">
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <ion-label>GitHub</ion-label>
+    </ion-item>
+  </ion-card>
+
+
+  
+</ion-content>

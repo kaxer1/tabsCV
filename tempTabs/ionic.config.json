@@ -1,0 +1,7 @@
+{
+  "name": "tempTabs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
